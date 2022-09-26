@@ -1,0 +1,26 @@
+{
+    "files.associations": {
+        "errno.h": "c",
+        "logger.h": "c",
+        "stdarg.h": "c",
+        "ethernet.h": "c",
+        "types.h": "c",
+        "array": "cpp",
+        "string": "cpp",
+        "string_view": "cpp",
+        "vector": "cpp",
+        "iterator": "cpp",
+        "ngx_config.h": "c",
+        "__locale": "cpp",
+        "ios": "cpp",
+        "incl.h": "c",
+        "string.h": "c",
+        "unistd.h": "c",
+        "stdio.h": "c",
+        "recvsend.h": "c",
+        "clientsocketctl.h": "c",
+        "messagequeue.h": "c",
+        "hostproc.h": "c"
+    },
+    "C_Cpp.errorSquiggles": "Disabled"
+}
