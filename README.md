@@ -9,7 +9,7 @@
 - 회사에서 사용하던 코드 컨벤션을 유지하거나, [nginx 오픈소스](https://github.com/nginx/nginx)를 참고하여 코드컨벤션을 가져가 보고자 하였습니다.
 - nginx는 수많은 사용자들로부터 검증 된 소스코드로 운영환경의 차이를 고려하더라도 관련 내용을 충분히 답습하여 작성할 가치가 있다고 판단했습니다.
 
-#### Asynchronous C Programming
+#### [Asynchronous C Programming](https://github.com/t0e8r1r4y/C-CPLUS/tree/main/AsynchronousCProgramming)
 - C언어로 비동기 프로그래밍을 구현한 방법에 대해 정리하였습니다.
 - 해당 방식의 장점은 Task 단위로 관심사를 분리하여 코드를 작성할 수 있습니다.
 - 해당 방식은 nodejs engine의 구동방식과도 유사성이 있습니다.
