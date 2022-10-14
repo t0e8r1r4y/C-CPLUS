@@ -1,11 +1,11 @@
-# AsynchronousCProgramming
+# IoT 센서 데이터를 수신받아 처리후 TCP/IP로 전송하는 어플리케이션 개발
+
+> 회사에서 개바한 내용을 공개할 수 없어, EDP 패턴으로 구현하는 일반적인 패턴에서 정리하였습니다.
+> IoT 센서가 목적하는 이벤트가 발생했을 경우에 해당 이벤를 Event Driven Parttern으로 처리한다고 합니다.
+
+### :small_orange_diamond: 기술키워드 : C, Arm-linux-cross-compiler, cmake
 
 
-### 설명
-- C언어 프로그래밍 비동기 패턴의 일반적인 구현입니다.
-- 현업에서 사용했던 소스는 비즈니스 로직이 많아서 간략하게 필요한 부분들만 재구성하여 구현하였습니다. ( private repo 비공개입니다. )
-- HeartBeat이나 timeout을 통한 처리에 대한 관리도 반드시 들어가야 되는 부분이지만 구현하지 않았습니다.
-- Blocking/NonBlocking Sync/Async에 대한 개념 정리는 블로그에 함께 정리하였습니다.
 
 
 ---
