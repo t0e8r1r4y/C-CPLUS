@@ -38,4 +38,4 @@
 
 
 #### C언어 관련 내용 정리
-- 
+- [링크](https://github.com/t0e8r1r4y/C-CPLUS/blob/main/C_LANG/C.md)
