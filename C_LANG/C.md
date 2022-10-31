@@ -130,10 +130,29 @@ tcpCloseSocket(int *socketFd )
 <br/>
 
 #### 포인터 대상의 const 선언
-- 포인터 
+- 포인터 변수에 const를 선언함으로서 값을 변경하는 것을 허용하지 않을 수 있다.
 
 
 #### 포인터의 포인터 (다중 포인터)
+- 포인터의 포인터이다.
+- 아래 예시에서 주소 값을 찍어보면, num은 자기 자신의 주소, pnum은 num의 주소값을 저장하고 있는 주소, ppnum은 pnum의 주소를 저장하는 주소를 출력한다.
+
+```C
+#include <stdio.h>
+
+int main( void ){
+
+    int num = 7;
+    int *pnum = &num;
+    int **ppnum = &pnum;
+
+    printf("%d %d %d\r\n", num, *pnum, **ppnum); // 7 7 7
+    printf("%04X %04X %04X\r\n", &num, &pnum, &ppnum); // BD01749C BD017490 BD017488
+
+}
+```
+
+- 개념적으로 조금 헷갈릴 수 있는 부분인데 `포인터의 배열`과 `배열 포인터`는 헷갈리면 안된다.
 
 
 #### 함수 포인터와 void 포인터
