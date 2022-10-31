@@ -153,9 +153,54 @@ int main( void ){
 ```
 
 - 개념적으로 조금 헷갈릴 수 있는 부분인데 `포인터의 배열`과 `배열 포인터`는 헷갈리면 안된다.
+- 보통 실무에서 3차원까지는 잘 안쓰기는하는데 2차원까지는 사용하므로 숙지가 필요하다.
+```C
+#include <stdio.h>
+
+int main( void ){
+
+    int arr[2][4] = {1,2,3,4,5,6,7,8};
+    int (*dest)[4] = arr;
+
+    for(int i = 0; i < 2; i++){
+        for(int j = 0; j < 4; j++) {
+            printf("%d ", dest[i][j]);
+        }
+        printf("\n");
+    }
+
+}
+```
 
 
-#### 함수 포인터와 void 포인터
+#### 포인터 함수
+- 포인터 함수를 기깔나게 잘 쓰면 구조체와 함께 C에서도 마치 클래스를 쓰는 것 처럼 정의를해서 쓸 수 있다.
+```C
+#include <stdio.h>
+
+void SimpleAdder(int n1, int n2) {
+    printf("%d\r\n", n1 + n2);
+}
+
+void ShowString(char * str) {
+    printf("%s\r\n", str);
+}
+
+int main( void ) {
+
+    char * str = "Function Poiner";
+    int num1 = 10;
+    int num2 = 20;
+
+    void (*fptr1)(int, int) = SimpleAdder;
+    void (*fptr2)(char *) = ShowString;
+
+    fptr1(num1, num2);
+    fptr2(str);
+
+    return 0;
+}
+```
 
 
 ## ✅ C언어에서 구조체
